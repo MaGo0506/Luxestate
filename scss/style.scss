@@ -1,0 +1,15 @@
+@import "base/reset";
+@import "base/typography";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "layout/navigation";
+@import "layout/home";
+@import "layout/footer";
+
+.clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

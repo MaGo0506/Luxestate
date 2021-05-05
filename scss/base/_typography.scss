@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  font-size: min(max(1rem, 4vw), 22px);
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
+  font-weight: 600;
+}

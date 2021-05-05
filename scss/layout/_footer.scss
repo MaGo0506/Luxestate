@@ -1,0 +1,80 @@
+.mainContact {
+  color: #fff;
+  background: $deepBlue;
+  padding: 3% 15% 3% 15%;
+
+  .contactUp {
+        margin: 0 7.8% 0 9%;
+        padding: 0;
+        height: 145px;
+        border-bottom: 1px solid #919eb1;
+
+    p {
+      float: left;
+      font-size: 1.75rem;
+    }
+
+    .subscribeContact {
+      padding: 0;
+      float: right;
+      margin: 2.3% 0 0 0;
+
+      input {
+        padding: 26px 180px 26px 25px;
+        border: none;
+        font-size: 0.7rem;
+      }
+
+      button {
+        padding: 26px 5px;
+        border: none;
+        background: #fff;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .contactDown {
+    margin-top: 5.6%;
+
+    .contactLogo {
+      float: left;
+      padding: 0;
+      margin: 0 19.5% 0 7.8%;
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin-top: 60px;
+        line-height: 20px;
+        font-size: 0.6rem;
+        color: $lightGray;
+        font-weight: normal;
+      }
+    }
+
+    ul {
+      display: inline-block;
+      float: left;
+      color: #919eb1;
+      font-size: 0.6rem;
+      font-weight: normal;
+      margin: 0.5% 8.8% 0 0;
+
+      li {
+        color: #fff;
+        font-weight: normal;
+      }
+
+      li:first-child {
+        margin-top: 37px;
+      }
+
+      li:not(:first-child) {
+        margin-top: 17px;
+      }
+    }
+  }
+}
