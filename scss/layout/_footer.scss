@@ -3,55 +3,129 @@
   background: $deepBlue;
   padding: 3% 15% 3% 15%;
 
+  @include mQ (1200px) {
+    padding: 5% 5%;
+  }
+
+  @include mQ (767px) {
+    padding: 5% 3%;
+  }
+
   .contactUp {
         margin: 0 7.8% 0 9%;
         padding: 0;
-        height: 145px;
+        height: 115px;
         border-bottom: 1px solid #919eb1;
+
+        @include mQ (767px) {
+          margin: 0 0 0 4%;
+          height: 130px;
+        }
 
     p {
       float: left;
-      font-size: 1.75rem;
+      font-size: 1.4rem;
+
+      @include mQ (1000px) {
+        font-size: 1rem;
+        width: 30%;
+      }
+
+      @include mQ (767px) {
+        font-size: 1.2rem;
+        float: none;
+        width: 100%;
+      }
     }
 
     .subscribeContact {
       padding: 0;
       float: right;
-      margin: 2.3% 0 0 0;
+      margin: 2.2% 0 0 0;
+
+      @include mQ (767px) {
+        float: none;
+      }
 
       input {
-        padding: 26px 180px 26px 25px;
+        padding: 22px 120px 20px 30px;
         border: none;
-        font-size: 0.7rem;
+        font-size: 0.55rem;
+
+        @include mQ (767px) {
+          padding: 22px 20px 20px 30px;
+          font-size: 0.8rem;
+        }
+
+        @include mQ (320px) {
+          padding: 19.5px 25px 19.5px 15px;
+          font-size: 0.7rem;
+        }
       }
 
       button {
-        padding: 26px 5px;
+        padding: 20px 4px;
         border: none;
         background: #fff;
-        font-size: 0.7rem;
+        font-size: 0.55rem;
+
+        @include mQ (767px) {
+          padding: 21px 3px 20px 3px;
+          font-size: 0.8rem;
+        }
+
+        @include mQ (320px) {
+          padding: 17px 4px 18px 4px;
+        }
       }
     }
   }
 
   .contactDown {
     margin-top: 5.6%;
+    height: 200px;
+
+    @include mQ (767px) {
+      height: 250px;
+      padding: 0;
+    }
 
     .contactLogo {
       float: left;
       padding: 0;
-      margin: 0 19.5% 0 7.8%;
+      margin: 0 19.5% 0 7.2%;
+
+      @include mQ (1200px) {
+        margin-right: 12%;
+      }
+
+      @include mQ (767px) {
+        float: none;
+        height: 60px;
+        margin: 0;
+      }
 
       h3 {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
+
+        @include mQ (767px) {
+          float: left;
+          font-size: 1.75rem;
+        }
       }
 
       p {
-        margin-top: 60px;
-        line-height: 20px;
-        font-size: 0.6rem;
+        margin-top: 50px;
+        line-height: 17px;
+        font-size: 0.5rem;
         color: $lightGray;
         font-weight: normal;
+
+        @include mQ (767px) {
+          float: right;
+          margin: 0;
+          font-size: 0.8rem;
+        }
       }
     }
 
@@ -59,9 +133,28 @@
       display: inline-block;
       float: left;
       color: #919eb1;
-      font-size: 0.6rem;
+      font-size: 0.45rem;
       font-weight: normal;
-      margin: 0.5% 8.8% 0 0;
+      margin: 0.5% 9.5% 0 0;
+
+      @include mQ (1200px) {
+        font-size: 0.6rem;
+        margin-right: 5%;
+      }
+
+      @include mQ (1000px) {
+        font-size: 0.5rem;
+        margin-right: 3%;
+      }
+
+      @include mQ (767px) {
+        font-size: 0.75rem;
+        margin-right: 5%;
+      }
+
+      @include mQ (320px) {
+        font-size: 0.65rem;
+      }
 
       li {
         color: #fff;
@@ -69,7 +162,7 @@
       }
 
       li:first-child {
-        margin-top: 37px;
+        margin-top: 32px;
       }
 
       li:not(:first-child) {

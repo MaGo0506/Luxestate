@@ -40,29 +40,76 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 
 .mainNav {
-  margin: 1.6% 14% 0 14.6%;
+  margin: 1.3% 14% 0 14.4%;
   padding-bottom: 20px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .mainNav {
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainNav {
+    margin: 0;
+    padding: 0;
+  }
+}
 .mainNav .logo {
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   float: left;
   width: 25%;
-  margin-top: 0.2%;
+  margin-top: 0.7%;
+}
+@media screen and (max-width: 1200px) {
+  .mainNav .logo {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainNav .logo {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainNav .logo {
+    width: 100%;
+    font-size: 1.75rem;
+    margin: 10px 0;
+  }
 }
 .mainNav .navItems {
   float: left;
-  width: 49%;
-  margin-left: 2.1%;
+  width: 50%;
+  margin-left: 0.7%;
+}
+@media screen and (max-width: 767px) {
+  .mainNav .navItems {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
 }
 .mainNav .navItems li {
-  margin-left: -2%;
+  margin-left: 4%;
   display: inline-block;
-  font-size: 0.55rem;
+  font-size: 0.45rem;
 }
 .mainNav .navItems li a {
   color: #1f373d;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .mainNav .navItems li a {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainNav .navItems li a {
+    font-size: 0.55rem;
+  }
 }
 .mainNav .navItems li a:hover {
   color: #71a9b7;
@@ -72,14 +119,34 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   float: left;
   width: 23%;
   text-align: left;
-  margin-left: -20px;
+}
+@media screen and (max-width: 1000px) {
+  .mainNav .navSignUp {
+    width: 28%;
+    margin-left: 20px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainNav .navSignUp {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
 }
 .mainNav .navSignUp li {
   display: inline-block;
-  font-size: 0.6rem;
+  font-size: 0.45rem;
+  margin-left: 3.5%;
+}
+@media screen and (max-width: 767px) {
+  .mainNav .navSignUp li {
+    font-size: 0.7rem;
+  }
 }
 .mainNav .navSignUp li a.JoinUs {
   color: #1f373d;
+  padding: 0;
 }
 .mainNav .navSignUp li a.JoinUs:hover {
   color: #71a9b7;
@@ -90,6 +157,12 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   background: #ffcc01;
   padding: 11px 15px 11px 28px;
   border-radius: 5px;
+  font-size: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .mainNav .navSignUp li .navBtn {
+    font-size: 0.7rem;
+  }
 }
 .mainNav .navSignUp li .navBtn:hover {
   background: #ffd634;
@@ -98,70 +171,165 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 
 .mainHero {
   position: relative;
-  margin: 0.45% 15% 0 19.5%;
-  height: 630px;
+  margin: 0 15% 0 19.5%;
+  height: 620px;
+}
+@media screen and (max-width: 1200px) {
+  .mainHero {
+    margin: 0 5%;
+  }
 }
 .mainHero .heroWrapp {
   margin: 0;
   padding-left: 0;
-  padding-top: 140px;
-  width: 55%;
+  padding-top: 110px;
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  .mainHero .heroWrapp {
+    width: 100%;
+  }
 }
 .mainHero .heroWrapp h1 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   letter-spacing: -2px;
-  padding-left: 13px;
-  margin-bottom: 45px;
+  padding-left: 8px;
+  margin-bottom: 38px;
+}
+@media screen and (max-width: 1200px) {
+  .mainHero .heroWrapp h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroWrapp h1 {
+    font-size: 2.5rem;
+  }
 }
 .mainHero .heroWrapp .searchBox {
   color: #1f373d;
   background: #ffcc01;
-  padding: 27px 32px 28px 0;
-  font-size: 0.7rem;
+  padding: 20px 25px 25px 0;
+  font-size: 0.5rem;
   border-radius: 5px;
-  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .mainHero .heroWrapp .searchBox {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroWrapp .searchBox {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainHero .heroWrapp .searchBox {
+    font-size: 0.7rem;
+    padding: 20px 20px 20px 0;
+  }
 }
 .mainHero .heroWrapp .searchBox:hover {
   background: #ffd634;
 }
 .mainHero .heroWrapp .searchBox input {
   color: #1f373d;
-  font-size: 0.7rem;
-  width: 381px;
+  font-size: 0.5rem;
+  width: 300px;
   margin-right: 30px;
-  padding: 28px 28px 28px 50px;
+  padding: 21px 5px 25px 44px;
   border: none;
   background: #fff;
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroWrapp .searchBox input {
+    width: 170px;
+    padding: 21px 30px 25px 30px;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainHero .heroWrapp .searchBox input {
+    width: 130px;
+    font-size: 0.7rem;
+    padding: 21px 10px 21px 10px;
+  }
 }
 .mainHero .heroWrapp .searchBox input:focus {
   outline: 1px solid #ffcc01;
 }
 .mainHero .heroContact {
   position: absolute;
-  height: 630px;
-  width: 960px;
+  height: 505px;
+  width: 767px;
   background: #96bece;
   top: 0;
   left: 19.5%;
   z-index: -1;
 }
+@media screen and (max-width: 1200px) {
+  .mainHero .heroContact {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainHero .heroContact {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroContact {
+    height: 600px;
+    width: 285px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainHero .heroContact {
+    width: 257px;
+  }
+}
 .mainHero .heroContact .heroImgPhone {
   position: absolute;
   bottom: 4.2%;
-  right: 51%;
+  right: 50%;
   z-index: 1;
+  height: 22px;
+}
+@media screen and (max-width: 1200px) {
+  .mainHero .heroContact .heroImgPhone {
+    right: 52%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainHero .heroContact .heroImgPhone {
+    right: 65%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroContact .heroImgPhone {
+    bottom: 13%;
+    right: 45%;
+  }
 }
 .mainHero .heroContact .heroNumber {
   text-align: center;
   position: absolute;
   bottom: 0;
-  right: 290px;
-  height: 80px;
-  width: 300px;
-  padding: 25px 0 0 20px;
+  right: 235px;
+  height: 65px;
+  width: 235px;
+  padding: 22px 0 0 43px;
   background: #ffcc01;
   color: #1f373d;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroContact .heroNumber {
+    height: 60px;
+    width: 200px;
+    right: 0;
+    bottom: 60px;
+  }
 }
 .mainHero .heroContact .heroNumber:hover {
   background: #ffd634;
@@ -169,20 +337,38 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 .mainHero .heroContact .heroImgLocation {
   position: absolute;
   bottom: 4.2%;
-  right: 25.5%;
+  right: 24.5%;
   z-index: 1;
+  height: 22px;
+}
+@media screen and (max-width: 1000px) {
+  .mainHero .heroContact .heroImgLocation {
+    right: 31%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroContact .heroImgLocation {
+    right: 50%;
+    bottom: 3%;
+  }
 }
 .mainHero .heroContact .heroLocation {
   text-align: center;
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 80px;
-  width: 320px;
-  padding: 25px 0 0 25px;
+  height: 65px;
+  width: 235px;
+  padding: 21px 0 0 16px;
   background: #ffcc01;
   color: #1f373d;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroContact .heroLocation {
+    height: 60px;
+    width: 200px;
+  }
 }
 .mainHero .heroContact .heroLocation:hover {
   background: #ffd634;
@@ -194,6 +380,19 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   transform: rotate(180deg);
   margin-top: 9%;
   padding: 0;
+  font-size: 0.45rem;
+}
+@media screen and (max-width: 767px) {
+  .mainHero .heroScroll {
+    margin-top: 42%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainHero .heroScroll {
+    margin-top: 32%;
+    margin-left: -20px;
+  }
 }
 .mainHero .heroScroll img {
   padding: 20px;
@@ -202,21 +401,49 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 
 .mainStat {
-  margin: 7.5% 18% 2.58% 19.1%;
+  margin: 0 18% 2.5% 18.8%;
+}
+@media screen and (max-width: 1200px) {
+  .mainStat {
+    margin: 0 0 7.5% 0;
+  }
 }
 .mainStat .statText {
   width: 50%;
   float: left;
+  margin-top: 0.8%;
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statText {
+    float: none;
+    width: 100%;
+  }
 }
 .mainStat .statText h2 {
   width: 60%;
-  padding-top: 2%;
-  margin-left: 1%;
-  font-size: 1.75rem;
+  margin-left: 0;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1000px) {
+  .mainStat .statText h2 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statText h2 {
+    width: 100%;
+    padding-top: 10%;
+    font-size: 2rem;
+  }
 }
 .mainStat .statText p {
-  font-size: 0.56rem;
-  line-height: 30px;
+  font-size: 0.45rem;
+  line-height: 25px;
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statText p {
+    font-size: 0.8rem;
+  }
 }
 .mainStat .statText .statOneP {
   margin-top: 10%;
@@ -228,44 +455,130 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   float: right;
   width: 40%;
   text-align: center;
+  padding-left: 0.3%;
+}
+@media screen and (max-width: 1000px) {
+  .mainStat .statCards {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statCards {
+    float: none;
+    width: 100%;
+    margin-top: 5%;
+    height: 350px;
+  }
 }
 .mainStat .statCards li {
   float: left;
-  margin-right: 6%;
-  margin-bottom: 6%;
-  width: 47%;
-  height: 200px;
-  width: 200px;
+  margin-right: 7%;
+  margin-bottom: 7%;
+  width: 46.5%;
+  height: 160px;
+  width: 160px;
   background: #f6f5f4;
   display: block;
 }
 .mainStat .statCards li:nth-child(2n) {
   margin-right: 0;
 }
+@media screen and (max-width: 1000px) {
+  .mainStat .statCards li {
+    height: 130px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statCards li {
+    height: 150px;
+    width: 150px;
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainStat .statCards li {
+    height: 120px;
+    width: 120px;
+  }
+}
 .mainStat .statCards li p {
   padding-top: 5%;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statCards li p {
+    font-size: 0.8rem;
+  }
 }
 .mainStat .statCards li span {
   margin-top: 28%;
   display: block;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: #ffcc01;
+}
+@media screen and (max-width: 767px) {
+  .mainStat .statCards li span {
+    font-size: 2.1rem;
+  }
 }
 
 .mainCatalog {
-  height: 1480px;
+  height: 1180px;
   background: #f6f5f4;
-  padding: 3% 10% 10% 21%;
+  padding: 2.55% 10% 10% 21%;
+}
+@media screen and (max-width: 1200px) {
+  .mainCatalog {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog {
+    height: 1580px;
+    padding: 11.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog {
+    padding: 5%;
+    height: 1300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainCatalog {
+    height: 2250px;
+  }
 }
 .mainCatalog .catalogTitle {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   width: 40%;
   margin: 0 0 6.2% 0.7%;
 }
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogTitle {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogTitle {
+    width: 100%;
+    margin: 10% 0 10% 0;
+  }
+}
 .mainCatalog .catalogCards {
-  height: 89%;
+  height: 875px;
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogCards {
+    height: 1250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards {
+    height: 980px;
+  }
 }
 .mainCatalog .catalogCards .catalogCard {
   background: #b1d7e8;
@@ -273,41 +586,88 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   float: left;
   margin-right: 2.5%;
   margin-bottom: 2.5%;
-  width: 31.6666666667%;
-  height: 500px;
-  width: 350px;
+  width: 14.5833333333%;
+  height: 400px;
+  width: 280px;
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
-  transition: 0.3s;
 }
-.mainCatalog .catalogCards .catalogCard:nth-child(3n) {
+.mainCatalog .catalogCards .catalogCard:nth-child(6n) {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 47.5%;
+    height: 300px;
+    width: 160px;
+  }
+  .mainCatalog .catalogCards .catalogCard:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainCatalog .catalogCards .catalogCard {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    width: 250px;
+    margin-left: 7%;
+  }
+  .mainCatalog .catalogCards .catalogCard:nth-child(1n) {
+    margin-right: 0;
+  }
 }
 .mainCatalog .catalogCards .catalogCard:hover {
   cursor: pointer;
 }
 .mainCatalog .catalogCards .catalogCard h5 {
   position: absolute;
-  bottom: 15.8%;
+  bottom: 15.5%;
   left: 7.2%;
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   font-weight: 900;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard h5 {
+    font-size: 0.8rem;
+  }
 }
 .mainCatalog .catalogCards .catalogCard span {
   position: absolute;
   bottom: 6.9%;
   left: 7.5%;
   color: #ffcc01;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard span {
+    font-size: 1.1rem;
+    bottom: 5%;
+  }
 }
 .mainCatalog .catalogCards .catalogCard .cardImgLeft {
   position: absolute;
   bottom: 7.1%;
   right: 32.5%;
 }
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard .cardImgLeft {
+    right: 14%;
+    bottom: 2%;
+  }
+}
 .mainCatalog .catalogCards .catalogCard .cardImgRight {
   position: absolute;
   bottom: 7.1%;
   right: 10%;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard .cardImgRight {
+    right: 14%;
+  }
 }
 .mainCatalog .catalogCards .catalogCard .cardTextLeft {
   position: absolute;
@@ -316,6 +676,13 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   font-size: 0.55rem;
   color: #bdc5d0;
 }
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard .cardTextLeft {
+    font-size: 0.8rem;
+    right: 5%;
+    bottom: 2%;
+  }
+}
 .mainCatalog .catalogCards .catalogCard .cardTextRight {
   position: absolute;
   bottom: 7.4%;
@@ -323,33 +690,79 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   font-size: 0.55rem;
   color: #bdc5d0;
 }
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard .cardTextRight {
+    font-size: 0.8rem;
+    right: 5%;
+  }
+}
 .mainCatalog .catalogCards .catalogCard .catalogBox {
   position: absolute;
   bottom: 0;
   background: #fff;
-  height: 120px;
+  height: 95px;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogCards .catalogCard .catalogBox {
+    height: 100px;
+  }
 }
 .mainCatalog .searchBox {
   color: #1f373d;
   background: #ffcc01;
-  padding: 24px 32px 25px 0;
-  font-size: 0.65rem;
+  padding: 21px 25px 21px 0;
+  font-size: 0.5rem;
   border-radius: 5px;
-  width: 100%;
   margin-left: 0.5%;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .searchBox {
+    width: 200px;
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainCatalog .searchBox {
+    width: 100px;
+    padding: 15px 15px 15px 0;
+    margin-left: 7%;
+  }
 }
 .mainCatalog .searchBox:hover {
   background: #ffd634;
 }
 .mainCatalog .searchBox input {
   color: #1f373d;
-  font-size: 0.7rem;
-  width: 365px;
+  font-size: 0.5rem;
+  width: 290px;
   margin-right: 30px;
-  padding: 25px 28px 25px 50px;
+  padding: 22px 28px 21px 50px;
   border: none;
   background: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .mainCatalog .searchBox input {
+    padding-bottom: 22px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog .searchBox input {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .searchBox input {
+    width: 200px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainCatalog .searchBox input {
+    width: 150px;
+    padding: 15px;
+  }
 }
 .mainCatalog .searchBox input:focus {
   outline: 1px solid #ffcc01;
@@ -357,30 +770,74 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 .mainCatalog .catalogBtn {
   color: #1f373d;
-  font-size: 0.7rem;
+  font-size: 0.55rem;
   padding: 24px 50px;
   border: 1px solid #fff;
   border-radius: 5px;
   background: #fff;
-  margin-left: 2.5%;
+  margin-left: 1.5%;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .mainCatalog .catalogBtn {
+    display: inline-block;
+    margin: 5% 0 0 15%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainCatalog .catalogBtn {
+    margin-left: 7%;
+  }
+}
+.mainCatalog .catalogBtn:hover {
+  background: #ffcc01;
+  color: #fff;
 }
 
 .howItWorksMain {
-  margin: 2.75% 10% 4.2% 20%;
+  margin: 2.75% 10% 4% 20%;
+}
+@media screen and (max-width: 1200px) {
+  .howItWorksMain {
+    margin: 5% 4% 10% 4%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain {
+    margin: 0;
+  }
 }
 .howItWorksMain .howItWorksTitle {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksTitle {
+    margin-top: 10%;
+  }
 }
 .howItWorksMain .howItWorksText {
   margin: 1.3% 0 0 0.2%;
-  font-size: 0.55rem;
-  line-height: 30px;
+  font-size: 0.45rem;
+  line-height: 25px;
+}
+@media screen and (max-width: 1000px) {
+  .howItWorksMain .howItWorksText {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksText {
+    margin: 10% 0;
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
 }
 .howItWorksMain .howItWorksCard {
   margin: 4.8% 1.5% 0 0.8%;
   display: inline-block;
-  height: 372px;
-  width: 343px;
+  height: 300px;
+  width: 270px;
   background: fff;
   webkit-box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
@@ -389,6 +846,25 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   overflow: hidden;
   padding: 11% 3% 0 3.2%;
 }
+@media screen and (max-width: 1000px) {
+  .howItWorksMain .howItWorksCard {
+    height: 300px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksCard {
+    margin-left: 12%;
+    height: 300px;
+    width: 250px;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .howItWorksMain .howItWorksCard {
+    margin-left: 5%;
+  }
+}
 .howItWorksMain .howItWorksCard:hover {
   background: #ffcc01;
   color: #fff;
@@ -396,24 +872,47 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 .howItWorksMain .howItWorksCard span {
   position: absolute;
-  top: -35%;
+  top: -25%;
   left: -10%;
-  font-size: 10rem;
+  font-size: 6.5rem;
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksCard span {
+    top: -20%;
+    font-size: 8rem;
+  }
 }
 .howItWorksMain .howItWorksCard h5 {
-  font-size: 0.8rem;
-  margin-bottom: 25px;
+  font-size: 0.65rem;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksCard h5 {
+    font-size: 1rem;
+    margin-top: 30%;
+    padding-left: 10%;
+  }
 }
 .howItWorksMain .howItWorksCard p {
-  font-size: 0.55rem;
-  line-height: 30px;
-  margin-left: 10%;
+  font-size: 0.45rem;
+  line-height: 25px;
+  margin-left: 11.5%;
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksCard p {
+    font-size: 0.8rem;
+  }
 }
 .howItWorksMain .howItWorksCard .howItWorksFind {
   display: inline-block;
   border-bottom: 2px solid #1f373d;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin: 4% 0 0 12%;
+}
+@media screen and (max-width: 767px) {
+  .howItWorksMain .howItWorksCard .howItWorksFind {
+    font-size: 0.8rem;
+  }
 }
 .howItWorksMain .howItWorksCard .howItWorksFind:hover {
   border-bottom: 2px solid #fff;
@@ -422,56 +921,162 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 .mainServices {
   margin: 0 10% 3.8% 14.4%;
 }
+@media screen and (max-width: 1200px) {
+  .mainServices {
+    margin: 10% 2%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServices {
+    margin: 20% 0 0 0;
+  }
+}
 .mainServices .servicesTitle {
   margin-bottom: 4.2%;
   padding-left: 7.8%;
 }
 .mainServices .servicesTitle h2 {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   padding-bottom: 1.4%;
 }
 .mainServices .servicesTitle p {
-  font-size: 0.6rem;
-  line-height: 30px;
+  font-size: 0.45rem;
+  line-height: 25px;
   width: 25%;
+}
+@media screen and (max-width: 1200px) {
+  .mainServices .servicesTitle p {
+    width: 35%;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServices .servicesTitle p {
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 10% 0;
+  }
 }
 .mainServices .servicesBox {
   display: block;
   float: left;
-  height: 630px;
-  width: 650px;
+  height: 505px;
+  width: 520px;
   background: #b1d7e8;
+}
+@media screen and (max-width: 1200px) {
+  .mainServices .servicesBox {
+    height: 550px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainServices .servicesBox {
+    margin-top: 5%;
+    height: 600px;
+    width: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServices .servicesBox {
+    height: 300px;
+    width: 335px;
+    float: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainServices .servicesBox {
+    width: 260px;
+  }
 }
 .mainServices .servicesRight {
   float: left;
   width: 35%;
   margin-left: 7.5%;
 }
+@media screen and (max-width: 767px) {
+  .mainServices .servicesRight {
+    float: none;
+    width: 100%;
+    margin: 10% 0;
+  }
+}
+.mainServices .servicesRight h3 {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 767px) {
+  .mainServices .servicesRight h3 {
+    font-size: 1.7rem;
+  }
+}
 .mainServices .servicesRight h3:not(:first-child) {
   padding-top: 10.5%;
 }
 .mainServices .servicesRight p {
   margin-top: 5%;
-  font-size: 0.6rem;
-  line-height: 30px;
+  font-size: 0.45rem;
+  line-height: 25px;
+}
+@media screen and (max-width: 767px) {
+  .mainServices .servicesRight p {
+    font-size: 0.8rem;
+  }
 }
 
 .mainAgent {
   background: #f6f5f4;
-  padding: 3% 10% 0 20.2%;
-  height: 850px;
+  padding: 3% 10% 0 20%;
+  height: 680px;
+}
+@media screen and (max-width: 1200px) {
+  .mainAgent {
+    padding: 10% 3%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainAgent {
+    padding: 10% 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAgent {
+    padding: 10% 0;
+    height: 1550px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainAgent {
+    height: 1400px;
+  }
 }
 .mainAgent .agentTitle h1 {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 .mainAgent .agentTitle p {
-  margin: 2% 0 4.5% 0;
-  font-size: 0.55rem;
-  line-height: 30px;
+  margin: 2% 0 4% 0;
+  font-size: 0.45rem;
+  line-height: 25px;
   width: 27%;
+}
+@media screen and (max-width: 1200px) {
+  .mainAgent .agentTitle p {
+    width: 50%;
+    font-size: 0.55rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAgent .agentTitle p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
 }
 .mainAgent .agentCards {
   height: 500px;
+}
+@media screen and (max-width: 1200px) {
+  .mainAgent .agentCards {
+    height: 420px;
+  }
 }
 .mainAgent .agentCards .agentCardHolder {
   background: #cdccce;
@@ -480,8 +1085,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   margin-right: 2.4%;
   margin-bottom: 2.4%;
   width: 31.7333333333%;
-  height: 480px;
-  width: 350px;
+  height: 385px;
+  width: 280px;
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
   transition: 0.3s;
   padding: 0;
@@ -489,32 +1094,61 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 .mainAgent .agentCards .agentCardHolder:nth-child(3n) {
   margin-right: 0;
 }
+@media screen and (max-width: 1000px) {
+  .mainAgent .agentCards .agentCardHolder {
+    height: 385px;
+    width: 230px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAgent .agentCards .agentCardHolder {
+    height: 400px;
+    width: 300px;
+    margin: 5% 0 5% 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainAgent .agentCards .agentCardHolder {
+    height: 350px;
+    width: 250px;
+  }
+}
 .mainAgent .agentCards .agentCardHolder:hover {
-  height: 510px;
+  height: 400px;
 }
 .mainAgent .agentCards .agentCardHolder span {
   position: absolute;
   bottom: 13.4%;
   left: 6.4%;
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .mainAgent .agentCards .agentCardHolder span {
+    font-size: 1rem;
+  }
 }
 .mainAgent .agentCards .agentCardHolder p {
   position: absolute;
   bottom: 6%;
   left: 6.4%;
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   color: #ffcc01;
+}
+@media screen and (max-width: 767px) {
+  .mainAgent .agentCards .agentCardHolder p {
+    font-size: 0.8rem;
+  }
 }
 .mainAgent .agentCards .agentCardHolder .agentImgOne {
   position: absolute;
   bottom: 6%;
-  right: 29%;
+  right: 28%;
 }
 .mainAgent .agentCards .agentCardHolder .agentImgTwo {
   position: absolute;
   bottom: 6%;
-  right: 14%;
+  right: 13%;
 }
 .mainAgent .agentCards .agentCardHolder .agentImgThree {
   position: absolute;
@@ -525,7 +1159,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   position: absolute;
   bottom: 0;
   background: #fff;
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 
@@ -533,93 +1167,241 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   margin-bottom: 5.5%;
 }
 .mainAdd .addBox {
-  height: 330px;
-  width: 540px;
+  height: 265px;
+  width: 430px;
   background: #8da4be;
   z-index: -1;
 }
+@media screen and (max-width: 1000px) {
+  .mainAdd .addBox {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addBox {
+    height: 300px;
+    width: 250px;
+    margin: 0 10%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainAdd .addBox {
+    margin: 0;
+  }
+}
 .mainAdd .addLocation {
-  height: 80px;
-  width: 335px;
+  height: 65px;
+  width: 270px;
   background: #ffcc01;
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  .mainAdd .addLocation {
+    height: 70px;
+    width: 250px;
+  }
+}
 .mainAdd button {
-  margin-top: 5.5%;
-  padding: 28px 56px;
+  margin-top: 5%;
+  padding: 23px 46px;
   background: #1f373d;
   border: none;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd button {
+    font-size: 1rem;
+  }
 }
 .mainAdd button:hover {
   background: #ffcc01;
   color: #1f373d;
 }
 .mainAdd .addSectionOne {
-  margin: 4.8% 5% 2.5% 19.5%;
+  margin: 4.7% 5% 2.5% 19.2%;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionOne {
+    margin: 4%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne {
+    margin: 10% 0;
+  }
 }
 .mainAdd .addSectionOne .addBox {
   position: absolute;
   float: left;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne .addBox {
+    float: none;
+    position: static;
+  }
 }
 .mainAdd .addSectionOne .addLocation {
   margin: 21.5% 0 0 8%;
   float: left;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionOne .addLocation {
+    margin-top: 25%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainAdd .addSectionOne .addLocation {
+    margin: 35% 0 0 5.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne .addLocation {
+    float: none;
+    margin: 0 10%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainAdd .addSectionOne .addLocation {
+    margin: 0;
+  }
+}
 .mainAdd .addSectionOne .addLocation img {
   position: absolute;
   bottom: 32%;
-  left: 11%;
+  left: 9.5%;
+  height: 22px;
 }
 .mainAdd .addSectionOne .addLocation p {
   position: absolute;
-  bottom: 35%;
+  bottom: 31%;
   right: 10%;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne .addLocation p {
+    bottom: -20%;
+  }
 }
 .mainAdd .addSectionOne h3, .mainAdd .addSectionOne p {
   width: 50%;
   float: left;
 }
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionOne h3, .mainAdd .addSectionOne p {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainAdd .addSectionOne h3, .mainAdd .addSectionOne p {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne h3, .mainAdd .addSectionOne p {
+    float: none;
+    width: 100%;
+  }
+}
 .mainAdd .addSectionOne h3 {
   margin: 5.5% 0 0 17%;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne h3 {
+    margin: 10% 0;
+  }
 }
 .mainAdd .addSectionOne p {
   margin: 2% 0 0 16.8%;
   width: 35%;
-  line-height: 30px;
-  font-size: 0.6rem;
+  line-height: 25px;
+  font-size: 0.45rem;
+}
+@media screen and (max-width: 1000px) {
+  .mainAdd .addSectionOne p {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionOne p {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 5% 0 15% 0;
+  }
 }
 .mainAdd .addSectionTwo {
-  margin: 1% 1% 3.6% 18.8%;
+  margin: 0 0.5% 3.6% 18.8%;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionTwo {
+    margin: 4%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionTwo {
+    margin: 10% 0;
+  }
 }
 .mainAdd .addSectionTwo .addBox {
   position: absolute;
   right: 23.5%;
   float: left;
 }
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionTwo .addBox {
+    right: 7%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionTwo .addBox {
+    position: static;
+    float: none;
+  }
+}
 .mainAdd .addSectionTwo .addLocation {
-  margin: 19.2% 0 0 25%;
+  margin: 19.5% 0 0 25%;
   float: left;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionTwo .addLocation {
+    margin: 25% 0 0 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainAdd .addSectionTwo .addLocation {
+    margin: 35% 0 0 7.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionTwo .addLocation {
+    float: none;
+    margin: 0 10%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainAdd .addSectionTwo .addLocation {
+    margin: 0;
+  }
 }
 .mainAdd .addSectionTwo .addLocation img {
   position: absolute;
   bottom: 32%;
-  left: 11%;
+  left: 9%;
+  height: 22px;
 }
 .mainAdd .addSectionTwo .addLocation p {
   position: absolute;
   bottom: 38%;
   right: 10%;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   width: 60%;
 }
 .mainAdd .addSectionTwo .addText {
@@ -627,34 +1409,83 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   width: 33%;
   float: left;
 }
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionTwo .addText {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionTwo .addText {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+}
 .mainAdd .addSectionTwo .addText h3 {
   margin-top: 13.5%;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .mainAdd .addSectionTwo .addText p {
   margin-top: 5.8%;
-  line-height: 30px;
-  font-size: 0.6rem;
+  line-height: 25px;
+  font-size: 0.45rem;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionTwo .addText p {
+    margin: 10% 0;
+    font-size: 0.8rem;
+  }
 }
 .mainAdd .addSectionThree {
-  margin: 0 5% 5% 19.6%;
+  margin: 0 5% 5% 19.2%;
+}
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionThree {
+    margin: 4%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionThree {
+    margin: 0;
+  }
 }
 .mainAdd .addSectionThree .addBox {
   float: left;
 }
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionThree .addBox {
+    float: none;
+  }
+}
 .mainAdd .addSectionThree .addText {
   margin-left: 47%;
+}
+@media screen and (max-width: 1200px) {
+  .mainAdd .addSectionThree .addText {
+    margin-left: 55%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionThree .addText {
+    margin: 0;
+  }
 }
 .mainAdd .addSectionThree .addText h3 {
   margin-left: 1%;
   padding-top: 3.5%;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .mainAdd .addSectionThree .addText p {
   width: 70%;
   padding-top: 3.5%;
-  line-height: 30px;
-  font-size: 0.6rem;
+  line-height: 25px;
+  font-size: 0.45rem;
+}
+@media screen and (max-width: 767px) {
+  .mainAdd .addSectionThree .addText p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
 }
 
 .mainContact {
@@ -662,64 +1493,176 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   background: #1f373d;
   padding: 3% 15% 3% 15%;
 }
+@media screen and (max-width: 1200px) {
+  .mainContact {
+    padding: 5% 5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainContact {
+    padding: 5% 3%;
+  }
+}
 .mainContact .contactUp {
   margin: 0 7.8% 0 9%;
   padding: 0;
-  height: 145px;
+  height: 115px;
   border-bottom: 1px solid #919eb1;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactUp {
+    margin: 0 0 0 4%;
+    height: 130px;
+  }
 }
 .mainContact .contactUp p {
   float: left;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1000px) {
+  .mainContact .contactUp p {
+    font-size: 1rem;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactUp p {
+    font-size: 1.2rem;
+    float: none;
+    width: 100%;
+  }
 }
 .mainContact .contactUp .subscribeContact {
   padding: 0;
   float: right;
-  margin: 2.3% 0 0 0;
+  margin: 2.2% 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactUp .subscribeContact {
+    float: none;
+  }
 }
 .mainContact .contactUp .subscribeContact input {
-  padding: 26px 180px 26px 25px;
+  padding: 22px 120px 20px 30px;
   border: none;
-  font-size: 0.7rem;
+  font-size: 0.55rem;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactUp .subscribeContact input {
+    padding: 22px 20px 20px 30px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainContact .contactUp .subscribeContact input {
+    padding: 19.5px 25px 19.5px 15px;
+    font-size: 0.7rem;
+  }
 }
 .mainContact .contactUp .subscribeContact button {
-  padding: 26px 5px;
+  padding: 20px 4px;
   border: none;
   background: #fff;
-  font-size: 0.7rem;
+  font-size: 0.55rem;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactUp .subscribeContact button {
+    padding: 21px 3px 20px 3px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainContact .contactUp .subscribeContact button {
+    padding: 17px 4px 18px 4px;
+  }
 }
 .mainContact .contactDown {
   margin-top: 5.6%;
+  height: 200px;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactDown {
+    height: 250px;
+    padding: 0;
+  }
 }
 .mainContact .contactDown .contactLogo {
   float: left;
   padding: 0;
-  margin: 0 19.5% 0 7.8%;
+  margin: 0 19.5% 0 7.2%;
+}
+@media screen and (max-width: 1200px) {
+  .mainContact .contactDown .contactLogo {
+    margin-right: 12%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactDown .contactLogo {
+    float: none;
+    height: 60px;
+    margin: 0;
+  }
 }
 .mainContact .contactDown .contactLogo h3 {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactDown .contactLogo h3 {
+    float: left;
+    font-size: 1.75rem;
+  }
 }
 .mainContact .contactDown .contactLogo p {
-  margin-top: 60px;
-  line-height: 20px;
-  font-size: 0.6rem;
+  margin-top: 50px;
+  line-height: 17px;
+  font-size: 0.5rem;
   color: #f6f5f4;
   font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactDown .contactLogo p {
+    float: right;
+    margin: 0;
+    font-size: 0.8rem;
+  }
 }
 .mainContact .contactDown ul {
   display: inline-block;
   float: left;
   color: #919eb1;
-  font-size: 0.6rem;
+  font-size: 0.45rem;
   font-weight: normal;
-  margin: 0.5% 8.8% 0 0;
+  margin: 0.5% 9.5% 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .mainContact .contactDown ul {
+    font-size: 0.6rem;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainContact .contactDown ul {
+    font-size: 0.5rem;
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainContact .contactDown ul {
+    font-size: 0.75rem;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainContact .contactDown ul {
+    font-size: 0.65rem;
+  }
 }
 .mainContact .contactDown ul li {
   color: #fff;
   font-weight: normal;
 }
 .mainContact .contactDown ul li:first-child {
-  margin-top: 37px;
+  margin-top: 32px;
 }
 .mainContact .contactDown ul li:not(:first-child) {
   margin-top: 17px;
