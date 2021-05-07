@@ -88,26 +88,26 @@
 
   .heroContact {
     position: absolute;
-    @include box (505px, 767px);
+    @include box (81.5%, 77%);
     background: $lightBlue;
     top: 0;
     left: 19.5%;
     z-index: -1;
 
     @include mQ (1200px) {
-      width: 720px;
+      width: 80%;
     }
 
     @include mQ (1000px) {
-      width: 580px;
+      width: 85%;
     }
 
     @include mQ (767px) {
-      @include box (600px, 285px);
+      @include box (100%, 85%);
     }
 
     @include mQ (320px) {
-      width: 257px;
+      width: 85%;
     }
 
     .heroImgPhone {
@@ -126,6 +126,16 @@
       }
 
       @include mQ (767px) {
+        bottom: 13%;
+        right: 25%;
+      }
+
+      @include mQ (570px) {
+        bottom: 13%;
+        right: 32%;
+      }
+
+      @include mQ (400px) {
         bottom: 13%;
         right: 45%;
       }
@@ -165,8 +175,24 @@
       }
 
       @include mQ (767px) {
+        right: 27%;
+      }
+
+      @include mQ (570px) {
+        right: 36%;
+      }
+
+      @include mQ (500px) {
+        right: 42%;
+      }
+
+      @include mQ (400px) {
         right: 50%;
         bottom: 3%;
+      }
+
+      @include mQ (320px) {
+        right: 55%;
       }
     }
 
@@ -204,7 +230,7 @@
     padding: 0;
     font-size: 0.45rem;
 
-    @include mQ (767px) {
+    @include mQ (400px) {
       margin-top: 42%;
       font-size: 0.8rem;
     }
@@ -290,31 +316,18 @@
     @include mQ (767px) {
       float: none;
       width: 100%;
-      margin-top: 5%;
+      margin-top: 3%;
       height: 350px;
     }
 
     li {
       @include grid(2, 7%);
-      @include box(160px, 160px);
+      width: 44%;
+      padding: 15% 10%;
       background: $lightGray;
       display: block;
 
-      @include mQ (1000px) {
-        @include box(130px, 130px);
-      }
-
-      @include mQ (767px) {
-        @include box (150px, 150px);
-        margin-left: 1%;
-      }
-
-      @include mQ (320px) {
-        @include box (120px, 120px);
-      }
-
     p {
-      padding-top: 5%;
       font-size: 0.5rem;
       display: block;
 
@@ -324,7 +337,6 @@
     }
 
     span {
-      margin-top: 28%;
       display: block;
       font-size: 1.4rem;
       color: $goldYellow;
@@ -347,7 +359,7 @@
   }
 
   @include mQ (1000px) {
-    height: 1580px;
+    height: 1080px;
     padding: 11.5%;
   }
 
@@ -380,7 +392,7 @@
     height: 875px;
 
     @include mQ (1000px) {
-      height: 1250px;
+      height: 750px;
     }
 
     @include mQ (767px) {
@@ -391,19 +403,23 @@
       background: $royalBlue;
       position: relative;
       @include grid(6, 2.5%);
-      @include box(400px, 280px);
+      @include box(46%, 27%);
       -webkit-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
       -moz-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
       box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
 
+      @include mQ (1000px) {
+        @include box(46%, 30%);
+      }
+
       @include mQ (767px) {
         @include grid(2, 5%);
-        @include box(300px, 160px);
+        @include box(30%, 46%);
       }
 
       @include mQ (320px) {
-        @include grid(1, 5%);
-        width: 250px;
+        @include grid(1, 8%);
+        width: 85%;
         margin-left: 7%;
       }
 
@@ -441,6 +457,10 @@
         bottom: 7.1%;
         right: 32.5%;
 
+        @include mQ (1000px) {
+          right: 43%;
+        }
+
         @include mQ (767px) {
           right: 14%;
           bottom: 2%;
@@ -451,6 +471,10 @@
         position: absolute;
         bottom: 7.1%;
         right: 10%;
+
+        @include mQ (1000px) {
+          right: 13%;
+        }
 
         @include mQ (767px) {
           right: 14%;
@@ -463,6 +487,10 @@
         right: 27%;
         font-size: 0.55rem;
         color: #bdc5d0;
+
+        @include mQ (1000px) {
+          right: 35%;
+        }
 
         @include mQ (767px) {
           font-size: 0.8rem;
@@ -617,9 +645,9 @@
   }
 
   .howItWorksCard {
-    margin: 4.8% 1.5% 0 0.8%;
+    margin: 4.8% 1.5% 0.5% 0.4%;
     display: inline-block;
-    @include box(300px, 270px);
+    @include box(20%, 27%);
     background: fff;
     webkit-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
@@ -627,16 +655,22 @@
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    padding: 11% 3% 0 3.2%;
+    padding: 11% 3% 3.5% 3.2%;
 
     @include mQ (1000px) {
       @include box(300px, 200px);
     }
 
     @include mQ (767px) {
+      margin-left: 15%;
+      @include box(10%, 65%);
+      padding: 12%;
+    }
+
+    @include mQ (500px) {
       margin-left: 12%;
-      @include box(300px, 250px);
-      padding: 3%;
+      @include box(10%, 80%);
+      padding: 12%;
     }
 
     @include mQ (320px) {
@@ -816,7 +850,7 @@
   }
 
   @include mQ (320px) {
-    height: 1400px;
+    height: 1500px;
   }
 
   .agentTitle {
@@ -854,7 +888,7 @@
       background: #cdccce;
       position: relative;
       @include grid(3, 2.4%);
-      @include box(385px, 280px);
+      @include box(77%, 27.5%);
       -webkit-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
       -moz-box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
       box-shadow: -1px 2px 28px -15px rgba(0,0,0,0.75);
@@ -862,16 +896,22 @@
       padding: 0;
 
       @include mQ (1000px) {
-        @include box(385px, 230px);
+        @include box(85%, 30%);
       }
 
       @include mQ (767px) {
-        @include box(400px, 300px);
-        margin:5% 0 5% 5%;
+        @include box(90%, 60%);
+        margin:5% 0 5% 20%;
       }
 
-      @include mQ (320px) {
-        @include box(350px, 250px);
+      @include mQ (500px) {
+        @include box (95%, 80%);
+        margin: 5% 0 5% 10%;
+      }
+
+      @include mQ (350px) {
+        margin-left: 5%;
+        @include box(95%, 90%);
       }
 
       &:hover {
@@ -934,16 +974,16 @@
   margin-bottom: 5.5%;
 
   .addBox {
-    @include box(265px, 430px);
+    @include box(265px, 38.5%);
     background: #8da4be;
     z-index: -1;
 
     @include mQ (1000px) {
-      width: 340px;
+      width: 50%;
     }
 
     @include mQ (767px) {
-      @include box(300px, 250px);
+      @include box(300px, 80%);
       margin: 0 10%;
       padding: 0;
     }
@@ -954,12 +994,16 @@
   }
 
   .addLocation {
-    @include box(65px, 270px);
+    @include box(65px, 25%);
     background: $goldYellow;
     z-index: 1;
 
+    @include mQ (1000px) {
+      width: 40%;
+    }
+
     @include mQ (767px) {
-      @include box(70px, 250px);
+      @include box(70px, 80%);
     }
   }
 
@@ -1041,7 +1085,11 @@
         width: 60%;
 
         @include mQ (767px) {
-          bottom: -20%;
+          bottom: -60%;
+        }
+
+        @include mQ (500px) {
+          bottom: -40%;
         }
       }
     }
@@ -1078,10 +1126,6 @@
       width: 35%;
       line-height: 25px;
       font-size: 0.45rem;
-
-      @include mQ (1000px) {
-        width: 30%;
-      }
 
       @include mQ (767px) {
         font-size: 0.8rem;

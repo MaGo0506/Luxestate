@@ -260,8 +260,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 .mainHero .heroContact {
   position: absolute;
-  height: 505px;
-  width: 767px;
+  height: 81.5%;
+  width: 77%;
   background: #96bece;
   top: 0;
   left: 19.5%;
@@ -269,23 +269,23 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 1200px) {
   .mainHero .heroContact {
-    width: 720px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 1000px) {
   .mainHero .heroContact {
-    width: 580px;
+    width: 85%;
   }
 }
 @media screen and (max-width: 767px) {
   .mainHero .heroContact {
-    height: 600px;
-    width: 285px;
+    height: 100%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 320px) {
   .mainHero .heroContact {
-    width: 257px;
+    width: 85%;
   }
 }
 .mainHero .heroContact .heroImgPhone {
@@ -306,6 +306,18 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   }
 }
 @media screen and (max-width: 767px) {
+  .mainHero .heroContact .heroImgPhone {
+    bottom: 13%;
+    right: 25%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .mainHero .heroContact .heroImgPhone {
+    bottom: 13%;
+    right: 32%;
+  }
+}
+@media screen and (max-width: 400px) {
   .mainHero .heroContact .heroImgPhone {
     bottom: 13%;
     right: 45%;
@@ -348,8 +360,28 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 767px) {
   .mainHero .heroContact .heroImgLocation {
+    right: 27%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .mainHero .heroContact .heroImgLocation {
+    right: 36%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainHero .heroContact .heroImgLocation {
+    right: 42%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainHero .heroContact .heroImgLocation {
     right: 50%;
     bottom: 3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainHero .heroContact .heroImgLocation {
+    right: 55%;
   }
 }
 .mainHero .heroContact .heroLocation {
@@ -382,7 +414,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   padding: 0;
   font-size: 0.45rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
   .mainHero .heroScroll {
     margin-top: 42%;
     font-size: 0.8rem;
@@ -466,7 +498,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   .mainStat .statCards {
     float: none;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
     height: 350px;
   }
 }
@@ -475,35 +507,15 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   margin-right: 7%;
   margin-bottom: 7%;
   width: 46.5%;
-  height: 160px;
-  width: 160px;
+  width: 44%;
+  padding: 15% 10%;
   background: #f6f5f4;
   display: block;
 }
 .mainStat .statCards li:nth-child(2n) {
   margin-right: 0;
 }
-@media screen and (max-width: 1000px) {
-  .mainStat .statCards li {
-    height: 130px;
-    width: 130px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .mainStat .statCards li {
-    height: 150px;
-    width: 150px;
-    margin-left: 1%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .mainStat .statCards li {
-    height: 120px;
-    width: 120px;
-  }
-}
 .mainStat .statCards li p {
-  padding-top: 5%;
   font-size: 0.5rem;
   display: block;
 }
@@ -513,7 +525,6 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   }
 }
 .mainStat .statCards li span {
-  margin-top: 28%;
   display: block;
   font-size: 1.4rem;
   color: #ffcc01;
@@ -536,7 +547,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 1000px) {
   .mainCatalog {
-    height: 1580px;
+    height: 1080px;
     padding: 11.5%;
   }
 }
@@ -572,7 +583,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 1000px) {
   .mainCatalog .catalogCards {
-    height: 1250px;
+    height: 750px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -587,12 +598,18 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   margin-right: 2.5%;
   margin-bottom: 2.5%;
   width: 14.5833333333%;
-  height: 400px;
-  width: 280px;
+  height: 46%;
+  width: 27%;
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
 }
 .mainCatalog .catalogCards .catalogCard:nth-child(6n) {
   margin-right: 0;
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogCards .catalogCard {
+    height: 46%;
+    width: 30%;
+  }
 }
 @media screen and (max-width: 767px) {
   .mainCatalog .catalogCards .catalogCard {
@@ -600,8 +617,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
     margin-right: 5%;
     margin-bottom: 5%;
     width: 47.5%;
-    height: 300px;
-    width: 160px;
+    height: 30%;
+    width: 46%;
   }
   .mainCatalog .catalogCards .catalogCard:nth-child(2n) {
     margin-right: 0;
@@ -610,10 +627,10 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 @media screen and (max-width: 320px) {
   .mainCatalog .catalogCards .catalogCard {
     float: left;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin-right: 8%;
+    margin-bottom: 8%;
     width: 100%;
-    width: 250px;
+    width: 85%;
     margin-left: 7%;
   }
   .mainCatalog .catalogCards .catalogCard:nth-child(1n) {
@@ -653,6 +670,11 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   bottom: 7.1%;
   right: 32.5%;
 }
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogCards .catalogCard .cardImgLeft {
+    right: 43%;
+  }
+}
 @media screen and (max-width: 767px) {
   .mainCatalog .catalogCards .catalogCard .cardImgLeft {
     right: 14%;
@@ -663,6 +685,11 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   position: absolute;
   bottom: 7.1%;
   right: 10%;
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogCards .catalogCard .cardImgRight {
+    right: 13%;
+  }
 }
 @media screen and (max-width: 767px) {
   .mainCatalog .catalogCards .catalogCard .cardImgRight {
@@ -675,6 +702,11 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   right: 27%;
   font-size: 0.55rem;
   color: #bdc5d0;
+}
+@media screen and (max-width: 1000px) {
+  .mainCatalog .catalogCards .catalogCard .cardTextLeft {
+    right: 35%;
+  }
 }
 @media screen and (max-width: 767px) {
   .mainCatalog .catalogCards .catalogCard .cardTextLeft {
@@ -834,17 +866,17 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   }
 }
 .howItWorksMain .howItWorksCard {
-  margin: 4.8% 1.5% 0 0.8%;
+  margin: 4.8% 1.5% 0.5% 0.4%;
   display: inline-block;
-  height: 300px;
-  width: 270px;
+  height: 20%;
+  width: 27%;
   background: fff;
   webkit-box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
   transition: 0.3s;
   position: relative;
   overflow: hidden;
-  padding: 11% 3% 0 3.2%;
+  padding: 11% 3% 3.5% 3.2%;
 }
 @media screen and (max-width: 1000px) {
   .howItWorksMain .howItWorksCard {
@@ -854,10 +886,18 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 767px) {
   .howItWorksMain .howItWorksCard {
+    margin-left: 15%;
+    height: 10%;
+    width: 65%;
+    padding: 12%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .howItWorksMain .howItWorksCard {
     margin-left: 12%;
-    height: 300px;
-    width: 250px;
-    padding: 3%;
+    height: 10%;
+    width: 80%;
+    padding: 12%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1046,7 +1086,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 320px) {
   .mainAgent {
-    height: 1400px;
+    height: 1500px;
   }
 }
 .mainAgent .agentTitle h1 {
@@ -1085,8 +1125,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   margin-right: 2.4%;
   margin-bottom: 2.4%;
   width: 31.7333333333%;
-  height: 385px;
-  width: 280px;
+  height: 77%;
+  width: 27.5%;
   box-shadow: -1px 2px 28px -15px rgba(0, 0, 0, 0.75);
   transition: 0.3s;
   padding: 0;
@@ -1096,21 +1136,29 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 1000px) {
   .mainAgent .agentCards .agentCardHolder {
-    height: 385px;
-    width: 230px;
+    height: 85%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 767px) {
   .mainAgent .agentCards .agentCardHolder {
-    height: 400px;
-    width: 300px;
-    margin: 5% 0 5% 5%;
+    height: 90%;
+    width: 60%;
+    margin: 5% 0 5% 20%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .mainAgent .agentCards .agentCardHolder {
-    height: 350px;
-    width: 250px;
+    height: 95%;
+    width: 80%;
+    margin: 5% 0 5% 10%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .mainAgent .agentCards .agentCardHolder {
+    margin-left: 5%;
+    height: 95%;
+    width: 90%;
   }
 }
 .mainAgent .agentCards .agentCardHolder:hover {
@@ -1168,19 +1216,19 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 .mainAdd .addBox {
   height: 265px;
-  width: 430px;
+  width: 38.5%;
   background: #8da4be;
   z-index: -1;
 }
 @media screen and (max-width: 1000px) {
   .mainAdd .addBox {
-    width: 340px;
+    width: 50%;
   }
 }
 @media screen and (max-width: 767px) {
   .mainAdd .addBox {
     height: 300px;
-    width: 250px;
+    width: 80%;
     margin: 0 10%;
     padding: 0;
   }
@@ -1192,14 +1240,19 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 .mainAdd .addLocation {
   height: 65px;
-  width: 270px;
+  width: 25%;
   background: #ffcc01;
   z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+  .mainAdd .addLocation {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 767px) {
   .mainAdd .addLocation {
     height: 70px;
-    width: 250px;
+    width: 80%;
   }
 }
 .mainAdd button {
@@ -1285,7 +1338,12 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 @media screen and (max-width: 767px) {
   .mainAdd .addSectionOne .addLocation p {
-    bottom: -20%;
+    bottom: -60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainAdd .addSectionOne .addLocation p {
+    bottom: -40%;
   }
 }
 .mainAdd .addSectionOne h3, .mainAdd .addSectionOne p {
@@ -1322,11 +1380,6 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, button {
   width: 35%;
   line-height: 25px;
   font-size: 0.45rem;
-}
-@media screen and (max-width: 1000px) {
-  .mainAdd .addSectionOne p {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 767px) {
   .mainAdd .addSectionOne p {
